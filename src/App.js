@@ -3,8 +3,8 @@ import { SmallPersonListItem } from './people/SmallPersonListItem';
 import { LargeProductListItem} from './products/LargeProductListItem';
 import { SmallProductListItem} from './products/SmallProductListItem';
 
-
-import { RegularList } from './RegularLIst';
+import { RegularList } from './RegularList';
+import { NumberedList } from './NumberedList';
 //import { SplitScreen } from './SplitScreen';
 
 const people = [{
@@ -59,7 +59,7 @@ function App() {
     //   </SplitScreen>
     <>
       <RegularList items={people} resourceName="person" itemComponent={SmallPersonListItem} />
-      <RegularList items={people} resourceName="person" itemComponent={LargePersonListItem} />
+      <NumberedList items={people} resourceName="person" itemComponent={LargePersonListItem} />
       <RegularList items={products} resourceName="product" itemComponent={SmallProductListItem} />
       <RegularList items={products} resourceName="product" itemComponent={LargeProductListItem} />
     </>
