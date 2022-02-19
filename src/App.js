@@ -5,6 +5,7 @@ import { SmallProductListItem} from './products/SmallProductListItem';
 
 import { RegularList } from './RegularList';
 import { NumberedList } from './NumberedList';
+import { Modal } from './Modal';
 //import { SplitScreen } from './SplitScreen';
 
 const people = [{
@@ -42,13 +43,13 @@ const products = [{
 }];
 
 
-const LeftHandComponent = ({name}) => {
-  return <h1 style={{backgroundColor: 'green'}}>{name}!</h1>;
-}
+// const LeftHandComponent = ({name}) => {
+//   return <h1 style={{backgroundColor: 'green'}}>{name}!</h1>;
+// }
 
-const RightHandComponent = ({message}) => {
-  return <p style={{backgroundColor: 'red'}}>{message}}!</p>
-}
+// const RightHandComponent = ({message}) => {
+//   return <p style={{backgroundColor: 'red'}}>{message}}!</p>
+// }
 
 function App() {
   return (
@@ -58,10 +59,14 @@ function App() {
     //     <RightHandComponent message="Hello world!" />
     //   </SplitScreen>
     <>
-      <RegularList items={people} resourceName="person" itemComponent={SmallPersonListItem} />
+      {/* <RegularList items={people} resourceName="person" itemComponent={SmallPersonListItem} />
       <NumberedList items={people} resourceName="person" itemComponent={LargePersonListItem} />
       <RegularList items={products} resourceName="product" itemComponent={SmallProductListItem} />
-      <RegularList items={products} resourceName="product" itemComponent={LargeProductListItem} />
+      <RegularList items={products} resourceName="product" itemComponent={LargeProductListItem} /> */}
+
+      <Modal>
+        <LargeProductListItem product={products[0]} />
+      </Modal>
     </>
     
 
