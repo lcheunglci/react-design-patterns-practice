@@ -1,5 +1,9 @@
 import { LargePersonListItem } from './people/LargePersonListItem';
 import { SmallPersonListItem } from './people/SmallPersonListItem';
+import { LargeProductListItem} from './products/LargeProductListItem';
+import { SmallProductListItem} from './products/SmallProductListItem';
+
+
 import { RegularList } from './RegularLIst';
 //import { SplitScreen } from './SplitScreen';
 
@@ -56,6 +60,8 @@ function App() {
     <>
       <RegularList items={people} resourceName="person" itemComponent={SmallPersonListItem} />
       <RegularList items={people} resourceName="person" itemComponent={LargePersonListItem} />
+      <RegularList items={products} resourceName="product" itemComponent={SmallProductListItem} />
+      <RegularList items={products} resourceName="product" itemComponent={LargeProductListItem} />
     </>
     
 
