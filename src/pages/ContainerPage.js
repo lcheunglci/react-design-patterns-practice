@@ -1,8 +1,14 @@
 import React from "react";
+import { CurrentUserLoader } from "../ContainerComponents/CurrentUserLoader";
+import { UserInfo } from "../ContainerComponents/UserInfo";
 
 const ContainerPage = () => (
     <>
-    <h1>Your code goes here.</h1>
+    
+        <CurrentUserLoader>
+            <UserInfo />
+        </CurrentUserLoader>
+
     </>
 )
 
