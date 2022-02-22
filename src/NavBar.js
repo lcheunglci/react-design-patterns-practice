@@ -17,6 +17,9 @@ const NavBar = () => (
             <li>
                 <Link to="/split-screen">SplitScreenComponent</Link>
             </li>
+            <li>
+                <Link to="/container">ContainerComponent</Link>
+            </li>
         </ul>
 
 

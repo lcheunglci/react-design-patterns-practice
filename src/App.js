@@ -5,6 +5,7 @@ import {
    Route
 } from 'react-router-dom'
 
+import ContainerPage from "./pages/ContainerPage";
 import ListPage from "./pages/ListPage";
 import ModalPage from "./pages/ModalPage";
 import SplitScreenPage from "./pages/SplitScreenPage";
@@ -18,13 +19,14 @@ const App = () => {
      <div className="App">
      <NavBar />
     <div>
-		<Routes>
-			<Route path="/" element={<HomePage />} exact/>
-			<Route path="/modal" element={ <ModalPage />} />
-			<Route path="/list" element={ <ListPage />} />
-			<Route path="/split-screen" element={ <SplitScreenPage />} />
-			<Route element={NotFoundPage} />
-		</Routes>
+        <Routes>
+            <Route path="/" element={<HomePage />} exact/>
+            <Route path="/modal" element={ <ModalPage />} />
+            <Route path="/list" element={ <ListPage />} />
+            <Route path="/split-screen" element={ <SplitScreenPage />} />
+            <Route path="/container" element={ <ContainerPage />} />
+            <Route element={NotFoundPage} />
+        </Routes>
     </div>
     </div>
     </Router>
