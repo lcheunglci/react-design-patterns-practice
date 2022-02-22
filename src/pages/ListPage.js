@@ -52,8 +52,8 @@ const ListPage = () => {
         <RegularList items={people} resourceName="person" itemComponent={SmallPersonListItem} />
         <NumberedList items={people} resourceName="person" itemComponent={LargePersonListItem} />
         <RegularList items={products} resourceName="product" itemComponent={SmallProductListItem} />
-        <RegularList items={products} resourceName="product" itemComponent={LargeProductListItem} /> }
-	    <LargeProductListItem product={products[0]} />
+        <RegularList items={products} resourceName="product" itemComponent={LargeProductListItem} />
+        <LargeProductListItem product={products[0]} />
         </>
     )
 }
