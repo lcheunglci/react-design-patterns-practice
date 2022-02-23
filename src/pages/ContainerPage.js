@@ -14,6 +14,12 @@ const ContainerPage = () => {
             return response.data;
     }
 
+    const getLocalStorageData = key => () => {
+        return localStorage.getItem(key);
+    }
+
+    const Text = ( {message} ) => <h1>{message}</h1>;
+
     return (
         <>
             <h1>Container examples</h1>
@@ -42,7 +48,9 @@ const ContainerPage = () => {
             <DataSource getDataFunc={getServerData('/users/123')} resourceName="user">
                 <UserInfo />
             </DataSource>
-
+            <DataSource getDataFunc={getLocalStorageData('message')} resourceName="message">
+                <Text/>
+            </DataSource>
         </>
     )
     }
