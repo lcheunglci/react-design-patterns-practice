@@ -9,17 +9,24 @@ const NavBar = () => (
                 <Link to="/">Home</Link>
             </li>
             <li>
-                <Link to="/list">ListComponents</Link>
+                <Link to="/list">List Components</Link>
             </li>
             <li>
-                <Link to="/modal">ModalComponent</Link>
+                <Link to="/modal">Modal Component</Link>
             </li>
             <li>
-                <Link to="/split-screen">SplitScreenComponent</Link>
+                <Link to="/split-screen">Split Screen Component</Link>
             </li>
             <li>
-                <Link to="/container">ContainerComponent</Link>
+                <Link to="/container">Container Components</Link>
             </li>
+            <li>
+                <Link to="/uncontrolled">Uncontrolled Components</Link>
+            </li>
+            <li>
+                <Link to="/controlled">Controlled Components</Link>
+            </li>
+
         </ul>
 
 

@@ -12,6 +12,8 @@ import SplitScreenPage from "./pages/SplitScreenPage";
 import HomePage from "./pages/HomePage";
 import NotFoundPage from "./pages/NotFoundPage";
 import NavBar from "./NavBar";
+import { UncontrolledFormPage } from "./pages/UncontrolledFormPage";
+import { ControlledFormPage } from "./pages/ControlledFormPage";
 
 const App = () => {
   return (
@@ -25,6 +27,8 @@ const App = () => {
             <Route path="/list" element={ <ListPage />} />
             <Route path="/split-screen" element={ <SplitScreenPage />} />
             <Route path="/container" element={ <ContainerPage />} />
+            <Route path="/uncontrolled" element={ <UncontrolledFormPage />} />
+            <Route path="/controlled" element={ <ControlledFormPage />} />
             <Route element={NotFoundPage} />
         </Routes>
     </div>
