@@ -1,6 +1,6 @@
 export const UserInfo = ( {user} ) => {
 
-    const { name, age, hairColor, hobbies } = user;
+    const { name, age, hairColor, hobbies } = user || {};
 
     return user ? (
         <>
@@ -12,5 +12,5 @@ export const UserInfo = ( {user} ) => {
             {hobbies.map(hobby => <li key={hobby}>{hobby}</li>)}
         </ul>
         </>
-    ) : <p>Loading...</p>
+    ) : <p>Loading...</p>;
 }

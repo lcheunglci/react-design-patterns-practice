@@ -4,7 +4,7 @@ import { UserInfo } from "../ContainerComponents/UserInfo";
 
 const ContainerPage = () => (
     <>
-    
+        <h1>Container examples</h1>
         <CurrentUserLoader>
             <UserInfo />
         </CurrentUserLoader>
