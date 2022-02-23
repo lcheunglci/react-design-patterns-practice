@@ -1,4 +1,4 @@
-import { ControlledForm } from "../ContainerComponents/ControlledForm";
+import { ControlledForm } from "../ControlledComponents/ControlledForm";
 import React from "react";
 
 export const ControlledFormPage = () => {
