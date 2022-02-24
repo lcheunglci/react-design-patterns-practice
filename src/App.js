@@ -15,6 +15,7 @@ import NavBar from "./NavBar";
 import { UncontrolledPage } from "./pages/UncontrolledPage";
 import { ControlledPage } from "./pages/ControlledPage";
 import HighOrderPage from "./pages/HighOrderPage";
+import CustomHooksPage from './pages/CustomHooksPage'
 
 const App = () => {
   return (
@@ -30,7 +31,8 @@ const App = () => {
             <Route path="/container" element={ <ContainerPage />} />
             <Route path="/uncontrolled" element={ <UncontrolledPage />} />
             <Route path="/controlled" element={ <ControlledPage />} />
-            <Route path="high-order" element={ <HighOrderPage />} />
+            <Route path="/high-order" element={ <HighOrderPage />} />
+			<Route path="/custom-hooks" element={ <CustomHooksPage />} />
             <Route element={NotFoundPage} />
         </Routes>
     </div>

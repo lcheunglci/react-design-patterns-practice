@@ -29,6 +29,9 @@ const NavBar = () => (
             <li>
                 <Link to="/high-order">High Order Components</Link>
             </li>
+            <li>
+                <Link to="/custom-hooks">Custom Hooks Components</Link>
+            </li>
 
         </ul>
 
