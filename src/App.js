@@ -14,6 +14,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 import NavBar from "./NavBar";
 import { UncontrolledPage } from "./pages/UncontrolledPage";
 import { ControlledPage } from "./pages/ControlledPage";
+import HighOrderPage from "./pages/HighOrderPage";
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
             <Route path="/container" element={ <ContainerPage />} />
             <Route path="/uncontrolled" element={ <UncontrolledPage />} />
             <Route path="/controlled" element={ <ControlledPage />} />
+            <Route path="high-order" element={ <HighOrderPage />} />
             <Route element={NotFoundPage} />
         </Routes>
     </div>

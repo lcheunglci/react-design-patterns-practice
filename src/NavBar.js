@@ -26,6 +26,9 @@ const NavBar = () => (
             <li>
                 <Link to="/controlled">Controlled Components</Link>
             </li>
+            <li>
+                <Link to="/high-order">High Order Components</Link>
+            </li>
 
         </ul>
 
