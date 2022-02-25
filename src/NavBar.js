@@ -35,6 +35,9 @@ const NavBar = () => (
             <li>
                 <Link to="/recursive">Recursive Components</Link>
             </li>
+            <li>
+                <Link to="/composition">Composition Components</Link>
+            </li>
 
         </ul>
 
