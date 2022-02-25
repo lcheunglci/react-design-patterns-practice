@@ -18,6 +18,7 @@ import HighOrderPage from "./pages/HighOrderPage";
 import CustomHooksPage from './pages/CustomHooksPage'
 import RecursivePage from "./pages/RecursivePage";
 import CompositionPage from "./pages/CompositionPage";
+import PartiallyApplyPage from "./pages/PartiallyApplyPage";
 
 const App = () => {
   return (
@@ -36,7 +37,8 @@ const App = () => {
             <Route path="/high-order" element={ <HighOrderPage />} />
             <Route path="/custom-hooks" element={ <CustomHooksPage />} />
             <Route path="/recursive" element={ <RecursivePage />} />
-			<Route path="/composition" element={ <CompositionPage/>} />
+            <Route path="/composition" element={ <CompositionPage/>} />
+            <Route path="/partially-apply" element={ <PartiallyApplyPage/>} />
             <Route element={NotFoundPage} />
         </Routes>
     </div>

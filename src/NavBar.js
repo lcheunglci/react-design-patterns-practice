@@ -38,6 +38,9 @@ const NavBar = () => (
             <li>
                 <Link to="/composition">Composition Components</Link>
             </li>
+            <li>
+                <Link to="/partially-apply">Partially Apply Components</Link>
+            </li>
 
         </ul>
 
