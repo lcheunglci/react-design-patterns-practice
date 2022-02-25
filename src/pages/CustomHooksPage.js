@@ -3,6 +3,7 @@ import { CurrentUserInfo } from "../CustomHookComponents/CurrentUserInfo";
 import { UserInfo } from "../CustomHookComponents/UserInfo";
 import { ResourceUserInfo } from "../CustomHookComponents/ResourceUserInfo";
 import { ResourceProductInfo } from "../CustomHookComponents/ResourceProductInfo"
+import { DataSourceProductInfo } from "../CustomHookComponents/DataSourceProductInfo";
 
 const CustomHooksPage = () => {
 
@@ -18,6 +19,8 @@ const CustomHooksPage = () => {
         <h2>useResource custom hook</h2>
         <ResourceUserInfo userId="234" />
         <ResourceProductInfo productId="1234" />
+        <h3>useDataSource custom hook</h3>
+        <DataSourceProductInfo productId="2345" />
         </>
     )
 }
