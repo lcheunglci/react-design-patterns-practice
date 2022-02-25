@@ -32,6 +32,9 @@ const NavBar = () => (
             <li>
                 <Link to="/custom-hooks">Custom Hooks Components</Link>
             </li>
+            <li>
+                <Link to="/recursive">Recursive Components</Link>
+            </li>
 
         </ul>
 
